@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+​
+    <!--부트스트랩 불러오기-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--구글 웹 폰트 불러오기-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>1주차 과제</title>
+​
+    <style>
+        /*전체를 감싸는 태그*/
+        .wrap {
+            width: 500px;
+            margin: 20px auto;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        /*판매 물품 정보*/
+        .item_information {
+            margin: 15px auto;
+        }
+        /*주문 입력 폼*/
+        .item_forms {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function clickOn() {
+            alert("주문이 완료되었습니다.");
+        }
+    </script>
+</head>
+​
+<body>
+<div class="wrap">
+    <div class="item_image">
+        <img src="https://i2.wp.com/www.novabach.com/wp-content/uploads/2020/06/The-Apple-Watch-Series-6-returns-with-a-host-of.jpg?resize=696%2C392&ssl=1" width="500px" height="auto" alt="apple_watch_06">
+    </div>
+    <div class="item_information">
+        <span style="font-size: 40px; font-weight: bold">Apple Watch06 </span>
+        <span style="font-size: 20px;">가격: 1,200,000원/개</span>
+        <br>
+        <span style="font-size: 15px;">
+        혈중 산소 포화도를 측정해주는 새롭고 혁신적인 센서와 앱. 슬쩍 보기만 해도 각종 피트니스 수치가 한눈에 들어오는 향상된 상시표시형 Retina 디스플레이.
+        Apple Watch Series 6를 손목에 찬 순간, 더 건강하고, 더 활동적이고, 더 스마트한 삶이 한층 가까워집니다.
+    </span>
+    </div>
+    <div class="item_forms">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>-- 수량을 선택하세요 --</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <button onclick="clickOn()" type="button" class="btn btn-primary btn-sm">주문하기</button>
+​
+    </div>
+</div>
+​
+</body>
+</html>
